@@ -12,9 +12,3 @@ class UsersController < ApplicationController
   end
 end
 
-private
-def pages_params
-	puts params
-    params.require(:pages).permit(:email)
-	end
-end
